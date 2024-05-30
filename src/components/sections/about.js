@@ -143,12 +143,13 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Shivam. As a Cyber Engineer at IKEA, I engineer and implement
-              innovative security solutions to protect the company’s web and API assets. With the
-              help of GCP, Docker, GitHub, and other tools, I deployed Heimdall, an in-house
-              automated security solution that scans subdomains and APIs, detects vulnerabilities,
-              and notifies the relevant stakeholders. I also pioneered a security maturity model to
-              enhance CI/CD pipeline controls.
+              Hello! My name is Shivam. As a Cyber Engineer at{' '}
+              <a href="https://www.ikea.com/in/en/">IKEA</a>, I engineer and implement innovative
+              security solutions to protect the company’s web and API assets. With the help of GCP,
+              Docker, GitHub, and other tools, I deployed Heimdall, an in-house automated security
+              solution that scans subdomains and APIs, detects vulnerabilities, and notifies the
+              relevant stakeholders. I also pioneered a security maturity model to enhance CI/CD
+              pipeline controls.
             </p>
 
             <p>
