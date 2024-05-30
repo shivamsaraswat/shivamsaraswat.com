@@ -125,7 +125,15 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'Product Security',
+    'Application Security',
+    'Security Automation',
+    'Python Scripting',
+    'DevSecOps',
+    'Cloud Security',
+    'Vulnerability Management',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,30 +143,29 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Shivam. As a Cyber Engineer at IKEA, I engineer and implement
+              innovative security solutions to protect the company’s web and API assets. With the
+              help of GCP, Docker, GitHub, and other tools, I deployed Heimdall, an in-house
+              automated security solution that scans subdomains and APIs, detects vulnerabilities,
+              and notifies the relevant stakeholders. I also pioneered a security maturity model to
+              enhance CI/CD pipeline controls.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              My 2+ years of security experience span various domains, including automated
+              vulnerability management, offensive and defensive strategies, and security automation.
+              I’ve secured CI/CD pipelines, improved supply chain security, and implemented Static
+              and Dynamic Application Security Testing (SAST/DAST).
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              Additionally, I hold a Bachelor of Technology in CSE (Cyber Security and Forensics)
+              from GLA University, along with certifications and publications in cybersecurity.
+            </p>
+
+            <p>
+              My goal is to continuously learn and apply new skills and technologies to protect and
+              empower the digital world.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
