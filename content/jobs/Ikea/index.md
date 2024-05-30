@@ -1,7 +1,7 @@
 ---
 date: '2023-04-17'
 title: 'Product Security Engineer'
-company: 'Ikea'
+company: 'IKEA'
 location: 'Bengaluru, India'
 range: 'April 2023 - Present'
 url: 'https://www.ikea.com/in/en/'

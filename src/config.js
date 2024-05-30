@@ -7,6 +7,10 @@ module.exports = {
       url: 'https://github.com/shivamsaraswat',
     },
     {
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/shivamsaraswat',
+    },
+    {
       name: 'Instagram',
       url: 'https://www.instagram.com/shivamsaraswat01',
     },
@@ -14,14 +18,10 @@ module.exports = {
       name: 'Twitter',
       url: 'https://twitter.com/thecybersapien',
     },
-    {
-      name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/shivamsaraswat',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
-    },
+    // {
+    //   name: 'Codepen',
+    //   url: 'https://codepen.io/bchiang7',
+    // },
   ],
 
   navLinks: [
@@ -36,6 +36,10 @@ module.exports = {
     {
       name: 'Work',
       url: '/#projects',
+    },
+    {
+      name: 'Blog',
+      url: 'https://cybersapien.tech/',
     },
     {
       name: 'Contact',
