@@ -3,6 +3,7 @@ date: '1'
 title: 'PYrevDNS'
 cover: './halcyon.png'
 github: 'https://github.com/shivamsaraswat/pyrevdns'
+external: 'https://github.com/shivamsaraswat/pyrevdns'
 tech:
   - Python
   - DNS

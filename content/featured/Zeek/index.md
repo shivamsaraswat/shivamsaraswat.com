@@ -1,6 +1,6 @@
 ---
 date: '3'
-title: 'Refinements in Zeek Intrusion Detection System'
+title: 'Refinements in Zeek IDS'
 cover: './zeek.jpg'
 github: 'https://github.com/shivamsaraswat/zeek-scripts'
 external: 'https://ieeexplore.ieee.org/document/9785047'
