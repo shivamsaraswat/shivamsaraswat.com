@@ -39,7 +39,7 @@ module.exports = {
     },
     {
       name: 'Blog',
-      url: 'https://cybersapien.tech/',
+      url: 'https://blog.shivamsaraswat.com/',
     },
     {
       name: 'Contact',
