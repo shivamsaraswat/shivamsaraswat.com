@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'PYrevDNS'
-cover: './halcyon.png'
+cover: './revdns.png'
 github: 'https://github.com/shivamsaraswat/pyrevdns'
 external: 'https://github.com/shivamsaraswat/pyrevdns'
 tech:
