@@ -42,6 +42,10 @@ module.exports = {
       url: 'https://blog.shivamsaraswat.com/',
     },
     {
+      name: 'Pensieve',
+      url: '/pensieve',
+    },
+    {
       name: 'Contact',
       url: '/#contact',
     },
