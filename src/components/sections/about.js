@@ -128,11 +128,21 @@ const About = () => {
   const skills = [
     'Product Security',
     'Application Security',
-    'Security Automation',
-    'Python Scripting',
     'DevSecOps',
     'Cloud Security',
+    'Security Automation (Python, Bash)',
     'Vulnerability Management',
+  ];
+
+  const tech_skills = [
+    'Git, GitHub',
+    'Github Actions',
+    'MongoDB',
+    'Docker',
+    'GCP, AWS',
+    'Swagger, Postman',
+    'Linux, MacOS, Windows',
+    'Burp Suite, Nmap, Wireshark, Nuclei, Nessus',
   ];
 
   return (
@@ -143,13 +153,9 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Shivam. As a Cyber Engineer at{' '}
+              Hello! My name is Shivam. As a Security Engineer at{' '}
               <a href="https://www.ikea.com/in/en/">IKEA</a>, I engineer and implement innovative
-              security solutions to protect the company’s web and API assets. With the help of GCP,
-              Docker, GitHub, and other tools, I deployed Heimdall, an in-house automated security
-              solution that scans subdomains and APIs, detects vulnerabilities, and notifies the
-              relevant stakeholders. I also pioneered a security maturity model to enhance CI/CD
-              pipeline controls.
+              security solutions to protect the company’s web and API assets.
             </p>
 
             <p>
@@ -174,6 +180,10 @@ const About = () => {
 
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+          </ul>
+
+          <ul className="skills-list">
+            {tech_skills && tech_skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
         </StyledText>
 
