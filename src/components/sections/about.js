@@ -135,10 +135,10 @@ const About = () => {
   ];
 
   const tech_skills = [
-    'Git, GitHub',
-    'Github Actions',
+    'Git, GitHub, GitLab, Bitbucket',
+    'Github Actions, GitLab CI/CD',
     'MongoDB',
-    'Docker',
+    'Docker, Kubernetes',
     'GCP, AWS',
     'Swagger, Postman',
     'Linux, MacOS, Windows',
@@ -154,12 +154,12 @@ const About = () => {
           <div>
             <p>
               Hello! My name is Shivam. As a Security Engineer at{' '}
-              <a href="https://www.ikea.com/in/en/">IKEA</a>, I engineer and implement innovative
+              <a href="https://tekion.com/">Tekion</a>, I engineer and implement innovative
               security solutions to protect the company’s web and API assets.
             </p>
 
             <p>
-              My 2+ years of security experience span various domains, including automated
+              My ~3 years of security experience span various domains, including automated
               vulnerability management, offensive and defensive strategies, and security automation.
               I’ve secured CI/CD pipelines, improved supply chain security, and implemented Static
               and Dynamic Application Security Testing (SAST/DAST).

@@ -65,11 +65,11 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a product security engineer (R&D) specializing in building exceptional security
+        I’m a security engineer (R&D) specializing in building exceptional security
         solutions. Currently, I’m focused on building dev-centric security products (using
         shift-left approach) at{' '}
-        <a href="https://www.ikea.com/in/en/" target="_blank" rel="noreferrer">
-          IKEA
+        <a href="https://tekion.com/" target="_blank" rel="noreferrer">
+          Tekion
         </a>
         .
       </p>
