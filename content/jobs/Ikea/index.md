@@ -9,17 +9,19 @@ url: 'https://www.ikea.com/in/en/'
 
 - **Architecting Security Solution & Deployment:** Engineered Heimdall, an in-house Automated Web and API Security Monitoring Solution, slashing external engagement costs by 20% through improved responsible disclosure programs. Orchestrated cloud deployment using GitHub Actions, Cloud Run, and Artifact Registry, ensuring seamless functionality.
 
-- **DevSecOps Scorecard & Platform Engineering:** Pioneered scorecard technique for instant DevSecOps assessment, leading to better decision-making and increased security awareness with a centralized organizational dashboard.
+- **SSDLC Automation & Integration:** Key architect for developing "Argos", an organization-wide proactive automated SSDLC maturity model. This includes one-click enablement via platform engineering, instant on-demand security assessment, security maturity score, actionable insights for better decision-making and automated secure template integration for developers.
 
 - **Collaborative Innovation:** Worked with Engineering teams to pioneer R&D efforts to strengthen IKEA’s product security infrastructure, integrating advanced tools into CI/CD pipelines.
 
-- **Pioneering Exploration:** Collaborated cross-functionally to prototype and implement scalable solutions, driving a cloud-first architecture.
+- **Pioneering Exploration (PoC):** Led cross-functional teams in prototyping and implementing cloud-first security architecture, resulting in 30% improvement in security posture.
 
-- **Automated Vulnerability Management:** Streamlined the extraction of critical issues from Google Security Command Centre (SCC) with real-time Slack notifications and centralized dashboard visualization, optimizing response time, triaging, follow-ups, and patching.
+- **Automated Vulnerability Management:** Reduced average response time to critical issues by 40% by streamlining the extraction of critical issues from Google Security Command Center (SCC), integrating real-time Slack notifications, and implementing a centralized dashboard for efficient triaging, follow-ups, and patching.
 
-- **Enhanced Cloud Security:** Pioneered Access Control Policies for Google Cloud Projects, resolved DNS Dangling Issues and formulated Best Practices Policies.
+- **Enhanced Cloud Security:** Pioneered Google Cloud access control policies and best practices. Led cloud vulnerability management, prioritizing fixes, detecting false positives, and reporting to stakeholders. Visualized vulnerabilities on an internal dashboard to deduce trends and make informed decisions for mitigation.
 
 - **Detailed Documentation:** Thoroughly documented Cloud Security findings investigations and research.
+
+- **Shadow IT Asset Management:** Resolved numerous DNS dangling issues associated with shadow IT assets, which were critical in preventing potential subdomain takeovers.
 
 - **Bug Bounty Program Management:** Investigated and resolved multiple issues reported by external Security Researchers on the Bug Bounty program.
 

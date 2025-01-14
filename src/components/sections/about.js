@@ -159,20 +159,15 @@ const About = () => {
             </p>
 
             <p>
-              My ~3 years of security experience span various domains, including automated
-              vulnerability management, offensive and defensive strategies, and security automation.
-              I’ve secured CI/CD pipelines, improved supply chain security, and implemented Static
-              and Dynamic Application Security Testing (SAST/DAST).
+              Experienced DevSecOps and Cybersecurity professional with nearly 3 years of expertise in architecting enterprise-grade security solutions and driving cloud-native implementations. Skilled at building and optimizing secure pipelines for large-scale environments, creating innovative in-house security tools, and implementing cloud security best practices.
             </p>
 
             <p>
-              Additionally, I hold a Bachelor of Technology in CSE (Cyber Security and Forensics)
-              from GLA University, along with certifications and publications in cybersecurity.
+              Recognized speaker at global security events and recipient of industry awards for excellence in product security. Proven ability to reduce security risks, streamline compliance processes, and enhance developer productivity through innovative tools and workflows.
             </p>
 
             <p>
-              My goal is to continuously learn and apply new skills and technologies to protect and
-              empower the digital world.
+              Committed to bridging the gap between development and security teams to create resilient, scalable, and efficient systems.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
