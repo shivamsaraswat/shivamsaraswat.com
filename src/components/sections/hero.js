@@ -68,8 +68,8 @@ const Hero = () => {
         I’m a security engineer (R&D) specialized in building exceptional security
         solutions. Currently, I’m focused on building dev-centric security products (using
         shift-left approach) at{' '}
-        <a href="https://tekion.com/" target="_blank" rel="noreferrer">
-          Tekion
+        <a href="https://www.paypal.com/" target="_blank" rel="noreferrer">
+          PayPal
         </a>
         .
       </p>

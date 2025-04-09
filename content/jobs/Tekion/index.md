@@ -3,7 +3,7 @@ date: '2024-08-22'
 title: 'Security Engineer'
 company: 'Tekion'
 location: 'Bengaluru, India'
-range: 'August 2024 - Present'
+range: 'August 2024 - March 2025'
 url: 'https://tekion.com/'
 ---
 

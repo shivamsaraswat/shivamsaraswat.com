@@ -154,20 +154,28 @@ const About = () => {
           <div>
             <p>
               Hello! My name is Shivam. As a Security Engineer at{' '}
-              <a href="https://tekion.com/">Tekion</a>, I engineer and implement innovative
+              <a href="https://www.paypal.com/">PayPal</a>, I engineer and implement innovative
               security solutions to protect the company’s web and API assets.
             </p>
 
             <p>
-              Experienced DevSecOps and Cybersecurity professional with nearly 3 years of expertise in architecting enterprise-grade security solutions and driving cloud-native implementations. Skilled at building and optimizing secure pipelines for large-scale environments, creating innovative in-house security tools, and implementing cloud security best practices.
+              Experienced DevSecOps and Cybersecurity professional with more than 3 years of
+              expertise in architecting enterprise-grade security solutions and driving cloud-native
+              implementations. Skilled at building and optimizing secure pipelines for large-scale
+              environments, creating innovative in-house security tools, and implementing cloud
+              security best practices.
             </p>
 
             <p>
-              Recognized speaker at global security events and recipient of industry awards for excellence in product security. Proven ability to reduce security risks, streamline compliance processes, and enhance developer productivity through innovative tools and workflows.
+              Recognized speaker at global security events and recipient of industry awards for
+              excellence in product security. Proven ability to reduce security risks, streamline
+              compliance processes, and enhance developer productivity through innovative tools and
+              workflows.
             </p>
 
             <p>
-              Committed to bridging the gap between development and security teams to create resilient, scalable, and efficient systems.
+              Committed to bridging the gap between development and security teams to create
+              resilient, scalable, and efficient systems.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
