@@ -126,7 +126,7 @@ const About = () => {
   }, []);
 
   const skills = [
-    'Product Security',
+    'SSDLC',
     'Application Security',
     'DevSecOps',
     'Cloud Security',
@@ -135,14 +135,12 @@ const About = () => {
   ];
 
   const tech_skills = [
-    'Git, GitHub, GitLab, Bitbucket',
-    'Github Actions, GitLab CI/CD',
+    'Github Actions, GitLab CI/CD, Harness CI/CD',
+    'Burp Suite, Nmap, Wireshark, Nuclei, Nessus',
     'MongoDB',
     'Docker, Kubernetes',
-    'GCP, AWS',
+    'Google Cloud, AWS',
     'Swagger, Postman',
-    'Linux, MacOS, Windows',
-    'Burp Suite, Nmap, Wireshark, Nuclei, Nessus',
   ];
 
   return (
@@ -159,18 +157,14 @@ const About = () => {
             </p>
 
             <p>
-              Experienced DevSecOps and Cybersecurity professional with more than 3 years of
-              expertise in architecting enterprise-grade security solutions and driving cloud-native
-              implementations. Skilled at building and optimizing secure pipelines for large-scale
-              environments, creating innovative in-house security tools, and implementing cloud
-              security best practices.
+              Accomplished DevSecOps and Cybersecurity professional with 3+ years of expertise in architecting 
+              enterprise-grade security solutions and driving cloud-native implementations. Demonstrated ability 
+              to build and optimize secure pipelines for large-scale environments, develop innovative in-house 
+              security tools, and implement cloud security best practices. 
             </p>
 
             <p>
-              Recognized speaker at global security events and recipient of industry awards for
-              excellence in product security. Proven ability to reduce security risks, streamline
-              compliance processes, and enhance developer productivity through innovative tools and
-              workflows.
+              Proven track record of reducing security risks, streamlining compliance processes, and enhancing developer productivity through innovative tools and workflows.
             </p>
 
             <p>
