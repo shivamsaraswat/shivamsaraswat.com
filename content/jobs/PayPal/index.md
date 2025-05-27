@@ -1,6 +1,6 @@
 ---
 date: '2025-04-03'
-title: 'Information Security Engineer 3'
+title: 'Senior Cybersecurity Engineer'
 company: 'PayPal'
 location: 'Bengaluru, India'
 range: 'April 2025 - Present'
