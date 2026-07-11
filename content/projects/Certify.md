@@ -6,7 +6,7 @@ external: 'https://github.com/shivamsaraswat/certify'
 tech:
   - Python
   - TLS
-showInProjects: true
+showInProjects: false
 ---
 
 Certify is a powerful and easy-to-use tool designed to check the security of SSL/TLS certificates.

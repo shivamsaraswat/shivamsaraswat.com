@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '2'
 title: 'PYrevDNS'
 cover: './revdns.png'
 github: 'https://github.com/shivamsaraswat/pyrevdns'
