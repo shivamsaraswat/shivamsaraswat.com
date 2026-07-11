@@ -1,6 +1,6 @@
 ---
 date: '3'
-title: 'Certify - SSL/TLS Certificate Security Analysis Tool'
+title: 'Certify'
 cover: './ssl.png'
 github: 'https://github.com/shivamsaraswat/certify'
 external: 'https://github.com/shivamsaraswat/certify'

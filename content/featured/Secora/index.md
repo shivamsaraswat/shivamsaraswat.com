@@ -1,6 +1,6 @@
 ---
 date: '1'
-title: 'SeCoRA (Secure Code Review AI Agent)'
+title: 'SeCoRA'
 cover: './ai-sast.png'
 github: 'https://github.com/shivamsaraswat/secora'
 external: 'https://github.com/shivamsaraswat/secora'

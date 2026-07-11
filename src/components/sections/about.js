@@ -127,20 +127,17 @@ const About = () => {
 
   const skills = [
     'SSDLC',
-    'Application Security',
+    'Supply Chain Security',
     'DevSecOps',
     'Cloud Security',
-    'Security Automation (Python, Bash)',
+    'Security Automation',
     'Vulnerability Management',
   ];
 
   const tech_skills = [
     'Github Actions, GitLab CI/CD, Harness CI/CD',
-    'Burp Suite, Nmap, Wireshark, Nuclei, Nessus',
-    'MongoDB',
     'Docker, Kubernetes',
     'Google Cloud, AWS',
-    'Swagger, Postman',
   ];
 
   return (
@@ -150,21 +147,13 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>
-              Hello! My name is Shivam. As a Security Engineer at{' '}
-              <a href="https://www.paypal.com/">PayPal</a>, I engineer and implement innovative
-              security solutions to protect the company’s web and API assets.
-            </p>
+            <p>Hello! My name is Shivam. I stop bad packages before they reach your developers.</p>
 
             <p>
-              Accomplished DevSecOps and Cybersecurity professional with 3+ years of expertise in architecting 
-              enterprise-grade security solutions and driving cloud-native implementations. Demonstrated ability 
-              to build and optimize secure pipelines for large-scale environments, develop innovative in-house 
-              security tools, and implement cloud security best practices. 
-            </p>
-
-            <p>
-              Proven track record of reducing security risks, streamlining compliance processes, and enhancing developer productivity through innovative tools and workflows.
+              Over the past 4+ years, I've built enterprise security platforms that reduce risk
+              without slowing engineering down — at PayPal, IKEA, and Tekion. My focus: SSDLC
+              automation, container and supply chain security, and building security tooling that
+              developers actually want to use, not tools they route around.
             </p>
 
             <p>
