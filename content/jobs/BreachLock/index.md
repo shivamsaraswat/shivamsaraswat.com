@@ -7,8 +7,6 @@ range: 'March 2022 - April 2023'
 url: 'https://www.breachlock.com/'
 ---
 
-- **Cyber Threat Research & Automation Code:** Researched on the latest cybersecurity threats and devised automation code for Vulnerability Scanners and External Attack Surface Management (EASM) platform.
-
-- **Vulnerability Scanner Enhancement:** Enhanced Automated Vulnerability Scanner effectiveness by analyzing and incorporating insights from Pentester-discovered vulnerabilities, ensuring continuous improvement.
-
-- **Security Automation & Testing:** Developed modular and efficient security automation plugins with comprehensive documentation and robust test cases using Pytest to ensure optimal functionality, scalability, and reliability of the Scanner.
+- Researched emerging threats and built automation for vulnerability scanners and an EASM platform.
+- Improved scanner detection by feeding in vulnerabilities found during pentests.
+- Built modular security automation plugins with Pytest coverage and docs for reliability and scale.
