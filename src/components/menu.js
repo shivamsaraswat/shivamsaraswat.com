@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { navLinks } from '@config';
 import { KEY_CODES } from '@utils';
 import { useOnClickOutside } from '@hooks';
+import ThemeToggle from './themeToggle';
 
 const StyledMenu = styled.div`
   display: none;
@@ -143,6 +144,7 @@ const StyledSidebar = styled.aside`
       ${({ theme }) => theme.mixins.link};
       width: 100%;
       padding: 3px 20px 20px;
+      font-weight: 600;
     }
   }
 
@@ -151,6 +153,7 @@ const StyledSidebar = styled.aside`
     padding: 18px 50px;
     margin: 10% auto 0;
     width: max-content;
+    font-weight: 600;
   }
 `;
 
@@ -270,6 +273,8 @@ const Menu = () => {
             <a href="/resume.pdf" className="resume-link">
               Resume
             </a>
+
+            <ThemeToggle />
           </nav>
         </StyledSidebar>
       </div>

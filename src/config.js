@@ -38,12 +38,12 @@ module.exports = {
       url: '/#projects',
     },
     {
-      name: 'Blog',
-      url: 'https://blog.shivamsaraswat.com/',
+      name: 'Recognition',
+      url: '/#recognition',
     },
     {
-      name: 'Pensieve',
-      url: '/pensieve',
+      name: 'Blog',
+      url: 'https://blog.shivamsaraswat.com/',
     },
     {
       name: 'Contact',
@@ -52,9 +52,9 @@ module.exports = {
   ],
 
   colors: {
-    green: '#64ffda',
-    navy: '#0a192f',
-    darkNavy: '#020c1b',
+    green: '#58a6ff',
+    navy: '#0a0e1a',
+    darkNavy: '#070b14',
   },
 
   srConfig: (delay = 200, viewFactor = 0.25) => ({

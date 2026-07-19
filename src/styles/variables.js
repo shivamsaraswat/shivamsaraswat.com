@@ -2,20 +2,23 @@ import { css } from 'styled-components';
 
 const variables = css`
   :root {
-    --dark-navy: #020c1b;
-    --navy: #0a192f;
-    --light-navy: #112240;
-    --lightest-navy: #233554;
-    --navy-shadow: rgba(2, 12, 27, 0.7);
-    --dark-slate: #495670;
-    --slate: #8892b0;
-    --light-slate: #a8b2d1;
-    --lightest-slate: #ccd6f6;
-    --white: #e6f1ff;
-    --green: #64ffda;
-    --green-tint: rgba(100, 255, 218, 0.1);
-    --pink: #f57dff;
-    --blue: #57cbff;
+    /* Ink & Electric Blue palette (variable names kept from the original theme:
+       "navy" = ink surfaces, "slate" = blue-gray text ramp, "green" = blue accent) */
+    --dark-navy: #070b14;
+    --navy: #0a0e1a;
+    --light-navy: #111827;
+    --lightest-navy: #1f2a44;
+    --navy-shadow: rgba(2, 6, 16, 0.7);
+    --dark-slate: #545f79;
+    --slate: #8a94ab;
+    --light-slate: #9fabc0;
+    --lightest-slate: #c6cfdd;
+    --white: #eef2f8;
+    --green: #58a6ff;
+    --green-tint: rgba(88, 166, 255, 0.1);
+    --pink: #ff7b72;
+    --blue: #79c0ff;
+    --nav-bg: rgba(10, 14, 26, 0.85);
 
     --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
       sans-serif;
@@ -47,6 +50,25 @@ const variables = css`
     --ham-after: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     --ham-after-active: bottom 0.1s ease-out,
       transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  }
+
+  /* Light theme: same variable names, inverted ramp; blue accent darkened for contrast */
+  html[data-theme='light'] {
+    --dark-navy: #eaedf1;
+    --navy: #f6f8fa;
+    --light-navy: #ffffff;
+    --lightest-navy: #d8dee4;
+    --navy-shadow: rgba(140, 149, 159, 0.25);
+    --dark-slate: #8c959f;
+    --slate: #57606a;
+    --light-slate: #424a53;
+    --lightest-slate: #24292f;
+    --white: #1b1f24;
+    --green: #0969da;
+    --green-tint: rgba(9, 105, 218, 0.1);
+    --pink: #cf222e;
+    --blue: #218bff;
+    --nav-bg: rgba(246, 248, 250, 0.85);
   }
 `;
 

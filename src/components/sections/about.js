@@ -86,6 +86,16 @@ const StyledPic = styled.div`
       transition: var(--transition);
     }
 
+    /* Light theme: show the natural photo instead of the duotone treatment */
+    html[data-theme='light'] & {
+      background-color: transparent;
+
+      .img {
+        mix-blend-mode: normal;
+        filter: none;
+      }
+    }
+
     &:before,
     &:after {
       content: '';

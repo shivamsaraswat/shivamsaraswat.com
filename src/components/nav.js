@@ -6,8 +6,8 @@ import styled, { css } from 'styled-components';
 import { navLinks } from '@config';
 import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
-import { Menu } from '@components';
-import { IconLogo, IconHex } from '@components/icons';
+import { Menu, ThemeToggle } from '@components';
+import { IconLogo } from '@components/icons';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: var(--nav-bg);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -38,7 +38,7 @@ const StyledHeader = styled.header`
       css`
         height: var(--nav-scroll-height);
         transform: translateY(0px);
-        background-color: rgba(10, 25, 47, 0.85);
+        background-color: var(--nav-bg);
         box-shadow: 0 10px 30px -10px var(--navy-shadow);
       `};
 
@@ -72,38 +72,18 @@ const StyledNav = styled.nav`
       position: relative;
       z-index: 1;
 
-      .hex-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        @media (prefers-reduced-motion: no-preference) {
-          transition: var(--transition);
-        }
-      }
-
       .logo-container {
         position: relative;
         z-index: 1;
         svg {
           fill: none;
           user-select: none;
-          @media (prefers-reduced-motion: no-preference) {
-            transition: var(--transition);
-          }
-          polygon {
-            fill: var(--navy);
-          }
         }
       }
 
       &:hover,
       &:focus {
         outline: 0;
-        transform: translate(-4px, -4px);
-        .hex-container {
-          transform: translate(4px, 3px);
-        }
       }
     }
   }
@@ -131,12 +111,14 @@ const StyledLinks = styled.div`
 
       a {
         padding: 10px;
+        font-weight: 600;
 
         &:before {
           content: '0' counter(item) '.';
           margin-right: 5px;
           color: var(--green);
           font-size: var(--fz-xxs);
+          font-weight: 400;
           text-align: right;
         }
       }
@@ -147,6 +129,7 @@ const StyledLinks = styled.div`
     ${({ theme }) => theme.mixins.smallButton};
     margin-left: 15px;
     font-size: var(--fz-xs);
+    font-weight: 600;
   }
 `;
 
@@ -185,18 +168,12 @@ const Nav = ({ isHome }) => {
     <div className="logo" tabIndex="-1">
       {isHome ? (
         <a href="/" aria-label="home">
-          <div className="hex-container">
-            <IconHex />
-          </div>
           <div className="logo-container">
             <IconLogo />
           </div>
         </a>
       ) : (
         <Link to="/" aria-label="home">
-          <div className="hex-container">
-            <IconHex />
-          </div>
           <div className="logo-container">
             <IconLogo />
           </div>
@@ -228,6 +205,7 @@ const Nav = ({ isHome }) => {
                   ))}
               </ol>
               <div>{ResumeLink}</div>
+              <ThemeToggle />
             </StyledLinks>
 
             <Menu />
@@ -262,6 +240,17 @@ const Nav = ({ isHome }) => {
                   <CSSTransition classNames={fadeDownClass} timeout={timeout}>
                     <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
                       {ResumeLink}
+                    </div>
+                  </CSSTransition>
+                )}
+              </TransitionGroup>
+
+              <TransitionGroup component={null}>
+                {isMounted && (
+                  <CSSTransition classNames={fadeDownClass} timeout={timeout}>
+                    <div
+                      style={{ transitionDelay: `${isHome ? (navLinks.length + 1) * 100 : 0}ms` }}>
+                      <ThemeToggle />
                     </div>
                   </CSSTransition>
                 )}

@@ -59,19 +59,18 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
+  const one = <h1>$ whoami</h1>;
   const two = <h2 className="big-heading">Shivam Saraswat.</h2>;
-  const three = <h3 className="big-heading">I build things for the security.</h3>;
+  const three = <h3 className="big-heading">I secure software at scale.</h3>;
   const four = (
     <>
       <p>
-        I’m a security engineer (R&D) specialized in building exceptional security
-        solutions. Currently, I’m focused on building dev-centric security products (using
-        shift-left approach) at{' '}
+        I'm a Senior Product Security Engineer at{' '}
         <a href="https://www.paypal.com/" target="_blank" rel="noreferrer">
           PayPal
-        </a>
-        .
+        </a>{' '}
+        building security platforms, supply-chain defenses, and developer tooling that engineers
+        actually use.
       </p>
     </>
   );

@@ -28,6 +28,14 @@ const StyledMainContainer = styled.main`
     width: 100%;
     margin-top: 20px;
   }
+
+  .empty-state {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    color: var(--light-slate);
+    font-size: var(--fz-lg);
+  }
 `;
 const StyledGrid = styled.ul`
   ${({ theme }) => theme.mixins.resetList};
@@ -157,6 +165,16 @@ const PensievePage = ({ location, data }) => {
             </a>
           </p>
         </header>
+
+        {posts.length === 0 && (
+          <p className="empty-state">
+            No memories collected here yet. In the meantime, you can read my writing on{' '}
+            <a href="https://blog.shivamsaraswat.com/" className="inline-link">
+              blog.shivamsaraswat.com
+            </a>
+            .
+          </p>
+        )}
 
         <StyledGrid>
           {posts.length > 0 &&

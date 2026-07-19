@@ -291,13 +291,30 @@ const StyledProject = styled.li`
     .img {
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1) brightness(90%);
+      filter: grayscale(100%) contrast(1) brightness(65%);
 
       @media (max-width: 768px) {
         object-fit: cover;
         width: auto;
         height: 100%;
         filter: grayscale(100%) contrast(1) brightness(50%);
+      }
+    }
+
+    /* Light theme: the screen/multiply blend washes images out on a light
+       background, so show them plainly */
+    html[data-theme='light'] & {
+      a {
+        background-color: transparent;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      .img {
+        mix-blend-mode: normal;
+        filter: none;
       }
     }
   }
