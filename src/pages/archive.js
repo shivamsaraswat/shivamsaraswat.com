@@ -1,13 +1,13 @@
 import React, { useRef, useEffect } from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { Layout } from '@components';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
+import SEO from '@components/head';
 
 const StyledTableContainer = styled.div`
   margin: 100px -20px;
@@ -148,8 +148,6 @@ const ArchivePage = ({ location, data }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title="Archive" />
-
       <main>
         <header ref={revealTitle}>
           <h1 className="big-heading">Archive</h1>
@@ -222,6 +220,12 @@ ArchivePage.propTypes = {
 };
 
 export default ArchivePage;
+
+export const Head = ({ location }) => <SEO title="Archive" pathname={location.pathname} />;
+
+Head.propTypes = {
+  location: PropTypes.object.isRequired,
+};
 
 export const pageQuery = graphql`
   {

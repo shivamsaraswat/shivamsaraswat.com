@@ -1,14 +1,15 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "shivamsaraswat.com",
+  "description": "Personal website of Shivam Saraswat, built with Gatsby",
   "version": "1.0.0",
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "author": "Shivam Saraswat",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/shivamsaraswat/shivamsaraswat.com"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "portfolio"
   ],
   "license": "MIT",
   "browserslist": "> 0.25%, not dead",
@@ -34,12 +35,11 @@
     "animejs": "^3.2.2",
     "babel-plugin-styled-components": "^2.1.4",
     "gatsby": "^5.13.6",
+    "gatsby-plugin-google-gtag": "^5.13.1",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
-    "gatsby-plugin-google-gtag": "^5.13.1",
     "gatsby-plugin-netlify": "^5.1.1",
     "gatsby-plugin-offline": "^6.13.2",
-    "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-plugin-sitemap": "^6.13.1",
@@ -55,7 +55,6 @@
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-helmet": "^6.1.0",
     "react-transition-group": "^4.4.5",
     "scrollreveal": "^4.0.9",
     "styled-components": "^6.1.11"
@@ -67,7 +66,7 @@
     "@upstatement/eslint-config": "^3.0.0",
     "@upstatement/prettier-config": "^1.1.0",
     "babel-preset-gatsby": "^3.13.2",
-    "eslint": "^9.4.0",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.34.2",

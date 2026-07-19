@@ -13,6 +13,12 @@ exports.createSchemaCustomization = ({ actions }) => {
   createTypes(`
     type MarkdownRemarkFrontmatter {
       cta: String
+      title: String
+      description: String
+      slug: String
+      date: Date @dateformat
+      draft: Boolean
+      tags: [String]
     }
   `);
 };

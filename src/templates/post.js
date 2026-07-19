@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Layout } from '@components';
+import SEO from '@components/head';
 
 const StyledPostContainer = styled.main`
   max-width: 1000px;
@@ -60,8 +60,6 @@ const PostTemplate = ({ data, location }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title={title} />
-
       <StyledPostContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>
@@ -96,6 +94,19 @@ const PostTemplate = ({ data, location }) => {
 };
 
 export default PostTemplate;
+
+export const Head = ({ data, location }) => (
+  <SEO
+    title={data.markdownRemark?.frontmatter?.title}
+    description={data.markdownRemark?.frontmatter?.description}
+    pathname={location.pathname}
+  />
+);
+
+Head.propTypes = {
+  data: PropTypes.object,
+  location: PropTypes.object.isRequired,
+};
 
 PostTemplate.propTypes = {
   data: PropTypes.object,
