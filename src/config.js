@@ -42,8 +42,8 @@ module.exports = {
       url: '/#recognition',
     },
     {
-      name: 'Blog',
-      url: 'https://blog.shivamsaraswat.com/',
+      name: 'Writing',
+      url: '/#writing',
     },
     {
       name: 'Contact',

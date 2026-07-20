@@ -7,6 +7,40 @@
 const path = require('path');
 const _ = require('lodash');
 
+const BLOG_FEED_URL = 'https://blog.shivamsaraswat.com/feed.xml';
+
+const decodeEntities = str =>
+  str
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+    .replace(/&#(\d+);/g, (_m, code) => String.fromCharCode(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_m, code) => String.fromCharCode(parseInt(code, 16)))
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, `'`)
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .trim();
+
+// The feed is a small Atom document we publish ourselves, so a targeted parse
+// beats pulling in an XML dependency. Only title/link/date/summary are read.
+const parseAtomFeed = xml => {
+  const tagText = (entry, tag) => {
+    const match = entry.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`));
+    return match ? decodeEntities(match[1]) : '';
+  };
+
+  return (xml.match(/<entry[\s\S]*?<\/entry>/g) || []).map(entry => {
+    const linkMatch = entry.match(/<link[^>]*href="([^"]+)"/);
+    return {
+      title: tagText(entry, 'title'),
+      // The feed emits a double slash after the host; normalize it.
+      url: linkMatch ? linkMatch[1].replace(/([^:])\/\//g, '$1/') : '',
+      date: tagText(entry, 'published') || tagText(entry, 'updated'),
+      description: tagText(entry, 'summary'),
+    };
+  });
+};
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 
@@ -20,7 +54,47 @@ exports.createSchemaCustomization = ({ actions }) => {
       draft: Boolean
       tags: [String]
     }
+
+    type ExternalPost implements Node {
+      title: String!
+      url: String!
+      date: Date! @dateformat
+      description: String
+    }
   `);
+};
+
+// Pulls recent posts from the external blog at build time. Failures are logged
+// and skipped rather than fatal, so the blog being down can't break a deploy.
+exports.sourceNodes = async ({ actions, createNodeId, createContentDigest, reporter }) => {
+  const { createNode } = actions;
+
+  let posts = [];
+  try {
+    const response = await fetch(BLOG_FEED_URL, { signal: AbortSignal.timeout(15000) });
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+    posts = parseAtomFeed(await response.text()).filter(post => post.title && post.url);
+  } catch (error) {
+    reporter.warn(
+      `Could not fetch blog feed (${error.message}). The Writing section will be omitted.`,
+    );
+    return;
+  }
+
+  reporter.info(`Fetched ${posts.length} posts from the blog feed.`);
+
+  posts.forEach(post => {
+    createNode({
+      ...post,
+      id: createNodeId(`external-post-${post.url}`),
+      internal: {
+        type: 'ExternalPost',
+        contentDigest: createContentDigest(post),
+      },
+    });
+  });
 };
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
