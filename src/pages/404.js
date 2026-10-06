@@ -72,7 +72,3 @@ NotFoundPage.propTypes = {
 export default NotFoundPage;
 
 export const Head = ({ location }) => <SEO title="Page Not Found" pathname={location.pathname} />;
-
-Head.propTypes = {
-  location: PropTypes.object.isRequired,
-};

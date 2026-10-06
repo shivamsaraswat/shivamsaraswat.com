@@ -49,6 +49,28 @@ const StyledPostContent = styled.div`
     padding: 0;
   }
 `;
+const StyledSources = styled.section`
+  margin-bottom: 100px;
+  padding-top: 30px;
+  border-top: 1px solid var(--lightest-navy);
+
+  h2 {
+    margin: 0 0 20px;
+    font-size: var(--fz-lg);
+  }
+
+  ul {
+    ${({ theme }) => theme.mixins.resetList};
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    ${({ theme }) => theme.mixins.inlineLink};
+  }
+`;
 
 const PostTemplate = ({ data, location }) => {
   const { markdownRemark } = data;
@@ -56,7 +78,7 @@ const PostTemplate = ({ data, location }) => {
     return <div>No data found</div>;
   }
   const { frontmatter, html } = markdownRemark;
-  const { title, date, tags } = frontmatter;
+  const { title, date, tags, sources } = frontmatter;
 
   return (
     <Layout location={location}>
@@ -88,6 +110,21 @@ const PostTemplate = ({ data, location }) => {
         </StyledPostHeader>
 
         <StyledPostContent dangerouslySetInnerHTML={{ __html: html }} />
+
+        {sources && sources.length > 0 && (
+          <StyledSources>
+            <h2>Sources</h2>
+            <ul>
+              {sources.map(({ title, url }, i) => (
+                <li key={i}>
+                  <a href={url} target="_blank" rel="noopener noreferrer">
+                    {title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </StyledSources>
+        )}
       </StyledPostContainer>
     </Layout>
   );
@@ -103,19 +140,14 @@ export const Head = ({ data, location }) => (
   />
 );
 
-Head.propTypes = {
-  data: PropTypes.object,
-  location: PropTypes.object.isRequired,
-};
-
 PostTemplate.propTypes = {
   data: PropTypes.object,
   location: PropTypes.object,
 };
 
 export const pageQuery = graphql`
-  query ($path: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $path } }) {
+  query ($slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title
@@ -123,6 +155,10 @@ export const pageQuery = graphql`
         date
         slug
         tags
+        sources {
+          title
+          url
+        }
       }
     }
   }

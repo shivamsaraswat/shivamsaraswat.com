@@ -46,6 +46,10 @@ module.exports = {
       url: '/#writing',
     },
     {
+      name: 'Pensieve',
+      url: '/pensieve',
+    },
+    {
       name: 'Contact',
       url: '/#contact',
     },

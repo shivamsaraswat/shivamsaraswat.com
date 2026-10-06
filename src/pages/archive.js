@@ -223,10 +223,6 @@ export default ArchivePage;
 
 export const Head = ({ location }) => <SEO title="Archive" pathname={location.pathname} />;
 
-Head.propTypes = {
-  location: PropTypes.object.isRequired,
-};
-
 export const pageQuery = graphql`
   {
     allMarkdownRemark(

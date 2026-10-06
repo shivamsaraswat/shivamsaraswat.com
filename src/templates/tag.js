@@ -104,11 +104,6 @@ export const Head = ({ pageContext, location }) => (
   <SEO title={`Tagged: #${pageContext.tag}`} pathname={location.pathname} />
 );
 
-Head.propTypes = {
-  pageContext: PropTypes.object.isRequired,
-  location: PropTypes.object.isRequired,
-};
-
 TagTemplate.propTypes = {
   pageContext: PropTypes.shape({
     tag: PropTypes.string.isRequired,

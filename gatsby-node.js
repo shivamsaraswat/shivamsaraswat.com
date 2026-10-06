@@ -53,6 +53,12 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: Date @dateformat
       draft: Boolean
       tags: [String]
+      sources: [MarkdownRemarkFrontmatterSource]
+    }
+
+    type MarkdownRemarkFrontmatterSource {
+      title: String!
+      url: String!
     }
 
     type ExternalPost implements Node {
@@ -138,7 +144,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.frontmatter.slug,
       component: postTemplate,
-      context: {},
+      // Gatsby appends a trailing slash to the page path, so the template
+      // can't match frontmatter.slug against $path; pass the slug explicitly.
+      context: { slug: node.frontmatter.slug },
     });
   });
 

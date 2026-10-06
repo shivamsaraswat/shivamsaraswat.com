@@ -163,12 +163,13 @@ const PensievePage = ({ location, data }) => {
             <a href="https://www.wizardingworld.com/writing-by-jk-rowling/pensieve">
               a collection of memories
             </a>
+            : quick notes, with sources
           </p>
         </header>
 
         {posts.length === 0 && (
           <p className="empty-state">
-            No memories collected here yet. In the meantime, you can read my writing on{' '}
+            No notes collected here yet. In the meantime, you can read my writing on{' '}
             <a href="https://blog.shivamsaraswat.com/" className="inline-link">
               blog.shivamsaraswat.com
             </a>
@@ -226,10 +227,6 @@ PensievePage.propTypes = {
 export default PensievePage;
 
 export const Head = ({ location }) => <SEO title="Pensieve" pathname={location.pathname} />;
-
-Head.propTypes = {
-  location: PropTypes.object.isRequired,
-};
 
 export const pageQuery = graphql`
   {

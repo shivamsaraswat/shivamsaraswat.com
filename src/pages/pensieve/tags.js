@@ -81,10 +81,6 @@ export default TagsPage;
 
 export const Head = ({ location }) => <SEO title="Tags" pathname={location.pathname} />;
 
-Head.propTypes = {
-  location: PropTypes.object.isRequired,
-};
-
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(limit: 2000, filter: { frontmatter: { draft: { ne: true } } }) {

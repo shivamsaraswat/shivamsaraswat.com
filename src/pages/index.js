@@ -40,7 +40,3 @@ IndexPage.propTypes = {
 export default IndexPage;
 
 export const Head = ({ location }) => <SEO pathname={location.pathname} />;
-
-Head.propTypes = {
-  location: PropTypes.object.isRequired,
-};
