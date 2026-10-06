@@ -9,3 +9,15 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    # Batch updates into a few PRs instead of one PR per package.
+    # Major version bumps are not grouped, so they still arrive one at a time.
+    groups:
+      npm-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
+      npm-minor-and-patch:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
