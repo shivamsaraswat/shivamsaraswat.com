@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "animejs": "^3.2.2",
-    "babel-plugin-styled-components": "^2.3.0",
+    "babel-plugin-styled-components": "^2.3.1",
     "gatsby": "^5.16.1",
     "gatsby-plugin-google-gtag": "^5.16.0",
     "gatsby-plugin-image": "^3.16.0",
@@ -57,7 +57,7 @@
     "react-dom": "^18.3.1",
     "react-transition-group": "^4.4.5",
     "scrollreveal": "^4.0.9",
-    "styled-components": "^6.5.3"
+    "styled-components": "^6.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",
@@ -73,6 +73,6 @@
     "gatsby-remark-code-titles": "^1.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.2",
-    "prettier": "^3.9.9"
+    "prettier": "^3.9.10"
   }
 }
